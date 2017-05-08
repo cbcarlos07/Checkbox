@@ -12,5 +12,62 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quais animais de extimação você tem?"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cão"
+        android:id="@+id/checkBoxCaoId"
+        android:checked="false"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gato"
+        android:id="@+id/checkBoxGatoId"
+        android:layout_below="@+id/checkBoxCaoId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Papagaio"
+        android:id="@+id/checkboxPapagaioId"
+        android:layout_below="@+id/checkBoxGatoId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:id="@+id/botaoMostrarId"
+        android:layout_below="@+id/checkboxPapagaioId"
+        android:layout_toRightOf="@+id/checkboxPapagaioId"
+        android:layout_toEndOf="@+id/checkboxPapagaioId"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Mostrar..."
+        android:id="@+id/textoExibicaoId"
+        android:layout_below="@+id/botaoMostrarId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp" />
 </RelativeLayout>
